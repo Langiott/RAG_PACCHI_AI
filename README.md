@@ -1,32 +1,9 @@
-# RAG_PACCHI_AI
+# RAG_PACCHI_AI-  OCR Automation via Telegram
 Sistema semplice e automatico per gestire immagini di come uno scontrino o un’etichetta. Basta inviare una foto (come uno scontrino o un’etichetta) su Telegram e il sistema legge il contenuto e lo salva automaticamente in un foglio Google, senza dover fare nulla manualmente. Poi lo restituisce nella chat.
-
-# =========================
-# PROGETTO PACCHI-AI (OCR + TELEGRAM + N8N)
-# =========================
-
-Sistema semplice e automatico per gestire immagini di come uno scontrino o un’etichetta. Basta inviare una foto (come uno scontrino o un’etichetta) su Telegram e il sistema legge il contenuto e lo salva automaticamente in un foglio Google, senza dover fare nulla manualmente. Poi lo restituisce nella chat. 
 
 ---
 
-Sistema automatizzato per la gestione di documenti tramite chat Telegram: un bot riceve immagini (es. etichette o scontrini) tramite **Telegram Bot API** e le inoltra, tramite **webhook**, a un workflow orchestrato in **n8n**. Il servizio è deployato su **VPS Host.it** con **Docker**, esposto pubblicamente tramite **Nginx** (reverse proxy) e **DuckDNS** per la gestione del dominio.
-
-Le immagini vengono elaborate da un microservizio **FastAPI OCR (porta 8000)** basato su **TesseractOCR**, sviluppato in **Python**, che estrae il testo in modo completamente locale, riducendo i costi operativi. I dati vengono poi processati tramite logica custom in **Javascript** (n8n) e script **bash**, e salvati in modo strutturato su **Google Sheets**.
-
-L’integrazione con i servizi Google è gestita tramite **Google Cloud Console**, utilizzata per configurare le credenziali OAuth necessarie. L’intero sistema è progettato per essere scalabile, economico e indipendente da API a pagamento, mantenendo un flusso real-time completamente automatizzato.
-
-# 🚀 PACCHI-AI — OCR Automation via Telegram
-
-## 📌 Descrizione (semplice)
-Sistema automatico che riceve immagini da Telegram (etichette, scontrini), estrae il testo e lo salva su Google Sheets senza intervento manuale.
-
-## 🧠 Descrizione tecnica
-Sistema automatizzato per la gestione di documenti tramite chat Telegram: un bot riceve immagini (es. etichette o scontrini) tramite **Telegram Bot API** e le inoltra, tramite **webhook**, a un workflow orchestrato in **n8n**. Il servizio è deployato su VPS con **Docker**, esposto pubblicamente tramite **Nginx** (reverse proxy) e **DuckDNS**.
-
-Le immagini vengono elaborate da un microservizio **FastAPI OCR (porta 8000)** basato su **TesseractOCR**, sviluppato in **Python**, che estrae il testo in locale. I dati vengono processati con logica custom in **Javascript (n8n)** e **bash**, e salvati in **Google Sheets**.
-
-L’integrazione Google è gestita tramite **Google Cloud Console (OAuth2)**.
-
+Sistema automatizzato per la gestione di documenti tramite chat Telegram: un bot riceve immagini (es. etichette o scontrini) tramite **Telegram Bot API** e le inoltra, tramite **webhook**, a un workflow orchestrato in **n8n**. Il servizio è deployato su **VPS Host.it** con **Docker**, esposto pubblicamente tramite **Nginx** (reverse proxy) e **DuckDNS** per la gestione del dominio.Le immagini vengono elaborate da un microservizio **FastAPI OCR (porta 8000)** basato su **TesseractOCR**, sviluppato in **Python**, che estrae il testo in modo completamente locale, riducendo i costi operativi. I dati vengono poi processati tramite logica custom in **Javascript** (n8n) e script **bash**, e salvati in modo strutturato su **Google Sheets**. L’integrazione con i servizi Google è gestita tramite **Google Cloud Console**, utilizzata per configurare le credenziali OAuth necessarie. L’intero sistema è progettato per essere scalabile, economico e indipendente da API a pagamento, mantenendo un flusso real-time completamente automatizzato.
 ---
 
 ## ⚙️ TECNOLOGIE
