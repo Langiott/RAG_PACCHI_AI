@@ -1,8 +1,8 @@
 # RAG - Telegram - OCR model - Extract text to image
 
 <p align="center">
-  <img src="IMG/telegram.png" width="300" />
-  <img src="IMG/rag.png" width="300" />
+  <img src="IMG/telegram.png" width="310" />
+  <img src="IMG/rag.png" width="310" />
 </p>
 
 Sistema semplice e automatico per gestire immagini di come uno scontrino o un’etichetta. Basta inviare una foto (come uno scontrino o un’etichetta) su Telegram e il sistema legge il contenuto e lo salva automaticamente in un foglio Google, senza dover fare nulla manualmente. Poi lo restituisce nella chat.
