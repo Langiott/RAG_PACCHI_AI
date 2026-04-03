@@ -1,8 +1,8 @@
 # RAG_PACCHI_AI-  OCR Automation via Telegram
 
-![Input OCR](IMG/Screenshot 2026-04-01 210837.png)
+![Input OCR](IMG/telegram.png)
 
-![Input OCR](IMG/Screenshot 2026-04-03 143203.png)
+![Input OCR](IMG/rag.png)
 
 Sistema semplice e automatico per gestire immagini di come uno scontrino o un’etichetta. Basta inviare una foto (come uno scontrino o un’etichetta) su Telegram e il sistema legge il contenuto e lo salva automaticamente in un foglio Google, senza dover fare nulla manualmente. Poi lo restituisce nella chat.
 Sistema automatizzato per la gestione di documenti tramite chat Telegram: un bot riceve immagini (es. etichette o scontrini) tramite **Telegram Bot API** e le inoltra, tramite **webhook**, a un workflow orchestrato in **n8n**. Il servizio è deployato su **VPS Host.it** con **Docker**, esposto pubblicamente tramite **Nginx** (reverse proxy) e **DuckDNS** per la gestione del dominio.Le immagini vengono elaborate da un microservizio **FastAPI OCR (porta 8000)** basato su **TesseractOCR**, sviluppato in **Python**, che estrae il testo in modo completamente locale, riducendo i costi operativi. I dati vengono poi processati tramite logica custom in **Javascript** (n8n) e script **bash**, e salvati in modo strutturato su **Google Sheets**. L’integrazione con i servizi Google è gestita tramite **Google Cloud Console**, utilizzata per configurare le credenziali OAuth necessarie. L’intero sistema è progettato per essere scalabile, economico e indipendente da API a pagamento, mantenendo un flusso real-time completamente automatizzato.
