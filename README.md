@@ -1,4 +1,4 @@
-# RAG_PACCHI_AI-  OCR Automation via Telegram
+# RAG - Telegram - OCR model - Extract text to image
 
 ![Input OCR](IMG/telegram.png)
 
