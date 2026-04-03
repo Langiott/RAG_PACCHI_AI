@@ -418,7 +418,7 @@ Invia conferma all’utente:
   - Campo binary = `data`
 - OCR migliorabile con:
   - regex avanzate
-  - modelli ML locali
+  - modelli ML tipo PaddleOCR o Chat Gpt e Gemini , ma gli ultimi due non opean source. 
 
 ---
 
@@ -431,4 +431,3 @@ Invia conferma all’utente:
 
 ---
 
----
