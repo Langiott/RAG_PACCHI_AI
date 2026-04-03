@@ -373,7 +373,7 @@ Elabora il testo OCR ed estrae:
 
 ### 8. 📊 Google Sheets (EXEL)
 
-<img src="IMG/sheet.png" width="500" />
+<img src="IMG/sheet.png" width="1000" />
 
 - Operazione: `append`
 - Scrive colonne:
