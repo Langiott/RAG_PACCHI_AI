@@ -18,13 +18,6 @@ Sistema automatizzato per la gestione di documenti tramite chat Telegram: un bot
 
 ---
 
-## 🌐 NGROK (solo locale)
-```bash
-ngrok http 5678
-```
-
----
-
 ## 🔐 ACCESSO SERVER
 ```bash
 ssh root@***IP_SERVER***
