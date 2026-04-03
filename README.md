@@ -244,7 +244,6 @@ curl -X POST https://***DOMINIO***/ocr-from-url \
 ⚠ Parsing migliorabile  
 ⚠ Sicurezza base migliorabile  
 
-# 🔄 WORKFLOW N8N — TELEGRAM → OCR → GOOGLE SHEETS
 
 ## 📊 SCHEMA FLOW
 
