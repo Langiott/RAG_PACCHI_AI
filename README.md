@@ -252,6 +252,8 @@ curl -X POST https://***DOMINIO***/ocr-from-url \
 
 ## 📊 SCHEMA FLOW
 
+<img src="IMG/rag.png" width="400" />
+
 ```
 Telegram Trigger
       ↓
